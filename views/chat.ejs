@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Room</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Chat Room</h1>
+    <div id="chatbox" class="border p-3 mb-3" style="height: 500px; overflow-y: scroll;"></div>
+    <form id="chatForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="message" name="message" placeholder="Enter your message" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+  </div>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

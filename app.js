@@ -8,6 +8,7 @@ dotenv.config();
 
 const app = express();
 const config = process.env;
+const port = config.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -90,6 +91,6 @@ app.post('/api/chat', requireLogin, async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000');
+app.listen(port, () => {
+  console.log('Server is running on http://localhost:' + port);
 });
